@@ -47,7 +47,7 @@ config = {
     'username' : None,
     'password' : None,
     'auth' : None,
-    'verify_ssl' : False
+    'verify_ssl' : True
 }
 
 types_db = { }

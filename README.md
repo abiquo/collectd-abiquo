@@ -32,8 +32,8 @@ And configure the collectd-abiquo plugin:
     Import "abiquo-writer"
 
     <Module "abiquo-writer">
-        URL "http://example.com/api/cloud/vdcs/1/vapps/1/vms/1/collectd"
-        Authorixation "basic"
+        URL "http://example.com/api/cloud/vdcs/1/vapps/1/vms/1/metrics/collectd"
+        Authentication "basic"
         Username "xxx"
         Password "yyy"
     </Module>
@@ -56,7 +56,7 @@ Name | Description | Default value
 `AccessTokenSecret` | OAuth access token secret used to authenticate to the Abiquo API | None
 `Username` | User for Basic authentication | None
 `Password` | Password for Basic authentication | None
-`VerifySSL` | Check host's SSL certificate | False
+`VerifySSL` | Check host's SSL certificate | True
 
 # License and authors
 
