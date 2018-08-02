@@ -78,7 +78,7 @@ def abiquo_config(c):
         elif child.key == 'Password':
             config['password'] = val
         elif child.key == 'VerifySSL':
-            config['verify_ssl'] = True
+            config['verify_ssl'] = val
         elif child.key == 'TypesDB':
             config['types_db'] = val
         elif child.key == 'FlushIntervalSecs':
@@ -206,3 +206,4 @@ def get_current_time():
 
 collectd.register_config(abiquo_config)
 collectd.register_init(abiquo_init)
+
