@@ -78,7 +78,10 @@ def abiquo_config(c):
         elif child.key == 'Password':
             config['password'] = val
         elif child.key == 'VerifySSL':
-            config['verify_ssl'] = True
+            if not val:
+                config['verify_ssl'] = val
+                import urllib3
+                urllib3.disable_warnings()
         elif child.key == 'TypesDB':
             config['types_db'] = val
         elif child.key == 'FlushIntervalSecs':
