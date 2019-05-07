@@ -21,7 +21,7 @@ import threading
 
 from requests_oauthlib import OAuth1
 
-VERSION = '0.0.1'
+VERSION = '0.0.2'
 
 OAUTH_PROTOCOL = 0
 BASIC_AUTH_PROTOCOL = 1
