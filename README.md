@@ -14,7 +14,7 @@ There is a [Chef cookbook](https://github.com/abiquo/collectd-abiquo-cookbook) a
 
 ## From source
 
-In collect's config file, load the python plugin:
+In collectd's config file, load the python plugin:
 
 ```xml
 <LoadPlugin "python">
@@ -32,7 +32,7 @@ And configure the collectd-abiquo plugin:
     Import "abiquo-writer"
 
     <Module "abiquo-writer">
-        URL "http://example.com/api/cloud/vdcs/1/vapps/1/vms/1/metrics/collectd"
+        URL "http://example.com/api/cloud/virtualdatacenters/1/virtualappliances/1/virtualmachines/1/metrics/collectd"
         Authentication "basic"
         Username "xxx"
         Password "yyy"
@@ -62,7 +62,7 @@ Name | Description | Default value
 
 * Author: Enric Ruiz (enric.ruiz@abiquo.com)
 
-Copyright 2015 Abiquo Holdings S.L.
+Copyright 2020 Abiquo Holdings S.L.
 
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
